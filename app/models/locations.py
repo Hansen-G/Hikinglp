@@ -3,6 +3,7 @@ from sqlalchemy.sql import func
 
 class Location(db.Model):
     __tablename__ = 'locations'
+    # Test
 
     id = db.Column(db.Integer, primary_key=True, unique=True, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=True)
